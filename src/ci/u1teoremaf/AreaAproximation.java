@@ -33,11 +33,19 @@ public class AreaAproximation {
         area = 0;
         for (int i = 0; i <= n; i++) {
             x[i] = xIni + i * dx;
-            fx[i] = x[i]*x[i];
+            //fx[i] = x[i]*x[i];
+            fx[i] = Math.sqrt(9.0-x[i]*x[i]);
             area = area + fx[i]*dx;
         }
     }
 
+    public void print() {
+        for (int i = 0; i <= n; i++) {
+            System.out.println(i + " " + x[i] + " " + fx[i]);
+        }
+        System.out.println("area: " + area);
+    }
+    
     public double getArea() {
         return area;
     }   
