@@ -2,7 +2,7 @@
  * ITESS-TICS
  * ENERO - JUNO 2024
  * CALCULO INTEGRAL
- * UNIDAD 1: TEORAMA FUNDAMENTAL DEL CALCULO
+ * UNIDAD 1: TEOREMA FUNDAMENTAL DEL CALCULO
  * CALCULO DE SERIES
  * FRANCISCO MONTECILLO
  * 16 / FEBRERO / 2024
@@ -29,16 +29,20 @@ public class Serie {
     
     public void compute() {
         int index = 0;
+        suma = 0;
         for (int i = iIni; i <= iEnd; i++) {
             this.i[index] = i;
             f[index] = 2*i*i - 2*i;
+            suma += f[index];
             index++;
         }
     }
     
     public void print() {
         System.out.println("index  |   i   |   f");
-        for (int index = 0; index < n; index++) 
+        for (int index = 0; index < n; index++) {
             System.out.println(index + "   |   " + i[index] + "   | " + f[index]);
+        }
+        System.out.println("suma: " + suma);
     }
 }
