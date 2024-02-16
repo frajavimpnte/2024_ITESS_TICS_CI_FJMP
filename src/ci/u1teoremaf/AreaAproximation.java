@@ -34,7 +34,8 @@ public class AreaAproximation {
         for (int i = 0; i <= n; i++) {
             x[i] = xIni + i * dx;
             //fx[i] = x[i]*x[i];
-            fx[i] = Math.sqrt(9.0-x[i]*x[i]);
+            //fx[i] = Math.sqrt(9.0-x[i]*x[i]);
+            fx[i] = 1/x[i];
             area = area + fx[i]*dx;
         }
     }

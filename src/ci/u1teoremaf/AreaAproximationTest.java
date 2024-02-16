@@ -12,7 +12,7 @@ package ci.u1teoremaf;
 
 public class AreaAproximationTest {
     public static void main(String args[]) {
-        AreaAproximation ap = new AreaAproximation(-3, 3, 6);
+        AreaAproximation ap = new AreaAproximation(1, 3, 10);
         
         ap.computeArea();
         ap.print();
