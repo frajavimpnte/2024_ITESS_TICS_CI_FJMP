@@ -8,7 +8,7 @@
  * 16 / FEBRERO / 2024
  */
 
-package ci.u1teoremaf;
+package ci.u1serie;
 
 public class Serie {
     private int iIni;

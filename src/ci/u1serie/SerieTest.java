@@ -7,7 +7,9 @@
  * FRANCISCO MONTECILLO
  * 16 / FEBRERO / 2024
  */
-package ci.u1teoremaf;
+package ci.u1serie;
+
+import ci.u1serie.Serie;
 
 public class SerieTest {
     public static void main(String ... args) {
