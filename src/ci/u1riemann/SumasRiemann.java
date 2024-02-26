@@ -38,16 +38,17 @@ public class SumasRiemann {
     }
 
     public double funcion(double x) {
-        return 1.0;
+        return Math.sin(x) * Math.sin(x);
     }
     
     public void imprimir() {
-        System.out.println("i  |  dxi  |  wi  |  fwi  |  fwi*dxi");
+        /*System.out.println("i  |  dxi  |  wi  |  fwi  |  fwi*dxi");
         
         for (int i = 0; i < w.length; i++) {
             System.out.println(i + "  |  " + dx[i] + "  |  " +  w[i] + "  |  " +
                     fw[i] + "  |  " + fw[i]*dx[i]);
         }
+*/
         System.out.println("Suma: " + suma);
         
         
