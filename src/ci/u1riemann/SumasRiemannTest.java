@@ -22,7 +22,7 @@ public class SumasRiemannTest {
         double b =  Math.PI;
         int n = 1000000 ;
         
-        double dx = (b - a)/n;
+        double dx = (b   - a)/n;
         double x[] = new double[n +1];
         double w[] = new double [n];
         
